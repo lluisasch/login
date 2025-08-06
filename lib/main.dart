@@ -10,6 +10,13 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LoginView();
-  }  
+    return MaterialApp(
+      title: 'Login',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: LoginView(),
+    );
+  }
 }
